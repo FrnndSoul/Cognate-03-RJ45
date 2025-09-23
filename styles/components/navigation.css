@@ -1,0 +1,25 @@
+/* ===== Navigation Bar ===== */
+.navbar {
+  display: flex; align-items: center; justify-content: space-between;
+  height: 64px;
+}
+.navbar .brand { display:flex; gap:10px; align-items:center; }
+.navbar .brand .logo { width: 36px; height: 36px; border-radius: 8px; object-fit: cover; }
+.navbar .brand .name { font-weight: 700; letter-spacing: .2px; }
+
+.navbar .menu { display:flex; gap: 18px; }
+.navbar .menu a {
+  padding: 10px 12px; border-radius: 10px; color: var(--muted);
+  transition: background .2s ease, color .2s ease;
+}
+.navbar .menu a:hover, .navbar .menu a.active {
+  background: var(--bg-soft); color: var(--text);
+}
+
+/* ===== Mobile Toggle (if you add one later) ===== */
+.nav-toggle { display: none; }
+@media (max-width: 800px){
+  .nav-toggle { display: inline-flex; }
+  .navbar .menu { display:none; }
+  .navbar.is-open .menu { display:flex; flex-direction: column; padding: 12px; background: var(--bg); border:1px solid var(--border); border-radius: 12px; position:absolute; top:64px; right:var(--pad); }
+}

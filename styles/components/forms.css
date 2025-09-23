@@ -1,0 +1,26 @@
+/* ===== Forms ===== */
+.form { display:grid; gap: 14px; }
+.field { display:grid; gap:6px; }
+label { font-weight: 600; color: var(--text); }
+.help { font-size: 12px; color: var(--muted); }
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select, textarea {
+  width: 100%; padding: 10px 12px; border-radius: 10px;
+  background: #0f121a; color: var(--text);
+  border: 1px solid var(--border);
+  outline: none;
+  transition: border-color .15s ease, box-shadow .15s ease;
+}
+textarea { min-height: 120px; resize: vertical; }
+
+input:focus, select:focus, textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,.15);
+}
+
+.input-inline { display:flex; gap: 10px; }
+@media (max-width: 640px){ .input-inline { flex-direction: column; } }

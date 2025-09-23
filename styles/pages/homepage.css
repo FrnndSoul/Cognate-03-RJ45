@@ -1,0 +1,10 @@
+/* ===== Homepage ===== */
+.hero .actions { margin-top: 18px; display:flex; gap: 12px; flex-wrap: wrap; }
+.features { margin-top: 32px; }
+.features .card .card-text { min-height: 48px; }
+
+/* Example banner / callout (optional) */
+.callout {
+  margin-top: 24px; padding: 16px; border:1px dashed var(--border);
+  background: rgba(123,131,255,.06); border-radius: var(--radius);
+}
