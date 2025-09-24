@@ -1,17 +1,22 @@
-# Nexora Tech — Static Site
+# Cognate-03-RJ45
 
-A lightweight, modular static website. HTML files live at the project root for simplicity. Styles are split by responsibility (base, layout, components, utilities, pages). Assets are organized under `resources/`.
----
+A lightweight multi-page website (HTML + CSS) for the RJ45 Cognate project.
 
-## 🚀 Quick Start
+## ✨ Features
+- Static pages: Home (`index.html`), About (`about.html`), Contact (`contact.html`)
+- Centralized styles in `/styles`
+- Assets in `/resources`
 
-```bash
-# 1) Clone
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
+## 📁 Project Structure
+.
+├─ index.html
+├─ about.html
+├─ contact.html
+├─ styles/
+└─ resources/
 
-# 2) Open locally (any of these)
-# Option A: just open index.html in your browser
-# Option B: simple HTTP server (Python 3)
-python -m http.server 8080
-# then visit http://localhost:8080
+## 🧰 Getting Started
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/FrnndSoul/Cognate-03-RJ45
+   cd Cognate-03-RJ45
